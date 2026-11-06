@@ -1,0 +1,81 @@
+/* ===== Fondo y textos ===== */
+.raiz {
+    -fx-background-color: linear-gradient(to bottom, #1e3c72, #2a5298);
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.titulo {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.subtitulo {
+    -fx-font-size: 13px;
+    -fx-text-fill: #c9d8f5;
+    -fx-text-alignment: center;
+}
+
+.mensaje {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e8f0ff;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+.mensaje.ok     { -fx-text-fill: #9af5b4; }
+.mensaje.error  { -fx-text-fill: #ff9a9a; }
+.mensaje.ayuda  { -fx-text-fill: #ffe28a; }
+
+.ayudas  { -fx-font-size: 14px; -fx-text-fill: #ffe28a; -fx-font-weight: bold; }
+.leyenda { -fx-font-size: 12px; -fx-text-fill: #c9d8f5; -fx-text-alignment: center; }
+
+/* ===== Tablero ===== */
+.tablero {
+    -fx-background-color: #1b2a49;
+    -fx-border-color: #1b2a49;
+    -fx-border-width: 3;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 18, 0.2, 0, 6);
+}
+
+/* El ancho de borde (líneas finas / gruesas entre bloques) lo fija el controlador */
+.celda {
+    -fx-background-color: white;
+    -fx-border-color: #1b2a49;
+    -fx-font-size: 30px;
+    -fx-text-fill: #1f6feb;
+    -fx-cursor: hand;
+}
+
+.celda:hover        { -fx-background-color: #eef5ff; }
+.celda.relacionada  { -fx-background-color: #f3f7ff; }
+.celda.fija         { -fx-background-color: #e4e9f2; -fx-text-fill: #1b2a49; -fx-font-weight: bold; }
+.celda.usuario      { -fx-text-fill: #1f6feb; }
+.celda.seleccionada { -fx-background-color: #bcdcff; }
+.celda.sugerida     { -fx-background-color: #fff3b0; -fx-text-fill: #b9770e; -fx-font-style: italic; }
+.celda.error {
+    -fx-background-color: #ffe1e1;
+    -fx-text-fill: #d62828;
+    -fx-effect: innershadow(gaussian, #e63946, 10, 0.9, 0, 0);
+}
+
+/* ===== Botones ===== */
+.boton {
+    -fx-background-color: #ff9f1c;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 22;
+    -fx-padding: 10 24 10 24;
+    -fx-cursor: hand;
+}
+.boton:hover { -fx-background-color: #ffb347; }
+.boton:pressed { -fx-background-color: #e68a00; }
+
+.boton-ayuda { -fx-background-color: #2ec4b6; }
+.boton-ayuda:hover { -fx-background-color: #4fd8cb; }
+.boton-ayuda:pressed { -fx-background-color: #22a094; }
+
+.boton-salir { -fx-background-color: #e63946; }
+.boton-salir:hover { -fx-background-color: #f0606b; }
+.boton-salir:pressed { -fx-background-color: #c22d39; }
